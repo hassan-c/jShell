@@ -329,8 +329,7 @@ function Shell() {
             return;
         }
         
-        Shell.command.run[(this.aliases[command[0]] || command[0])]
-            (command[1]);
+        Shell.command.run[this.aliases[command[0]] || command[0]](command[1]);
     };
 
 }
